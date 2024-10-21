@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滚动式数字验证码交互设计</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>滚动式数字验证码交互设计</h1>
+    <!--
+    <div style="background-color: #f1f1f1;text-align: center;padding: 30px;width: 100%;">
+        <img src="https://free.wzznft.com/i/2024/05/20/fjq4af.png" alt="落溪雨" width="100px" height="100px">
+        <p><b>是落溪雨呀</b></p>
+    </div>
+    -->
+    <button id="generate-captcha"><b>点击生成验证码</b></button>
+
+    <!-- 显示用户可调整的数字 -->
+    <div class="numbers-container" id="user-numbers">
+        <div class="number-box">0</div>
+        <div class="number-box">0</div>
+        <div class="number-box">0</div>
+        <div class="number-box">0</div>
+        <div class="number-box">0</div>
+        <div class="number-box">0</div>
+    </div>
+
+    <button id="submit-captcha"><b>确定</b></button>
+    <p id="result"></p>
+
+    <!-- 弹窗显示随机生成的验证码 -->
+    <div id="captcha-modal" class="modal">
+        <div class="modal-content">
+            <h2>验证码</h2>
+            <div class="numbers-container" id="generated-numbers">
+                <div class="number-box">0</div>
+                <div class="number-box">0</div>
+                <div class="number-box">0</div>
+                <div class="number-box">0</div>
+                <div class="number-box">0</div>
+                <div class="number-box">0</div>
+            </div>
+            <button id="close-modal"><b>关闭</b></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
